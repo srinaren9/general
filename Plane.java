@@ -1,6 +1,6 @@
 class Plane { 
     void fly() {
-         System.out.println("Fly");
+         System.out.println("I am flying");
     }
     
     public static void main(String[] args) {
