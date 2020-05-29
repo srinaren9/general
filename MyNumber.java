@@ -12,17 +12,14 @@ public class MyNumber {
 
 	private int number;
 	/*
-	 * For any even numbers
-     * the if condition divides it using 2. And for odd numbers it divides
-     * using the for loop. (The for loop cosists  of intialisator,condition 
-     * operator) The initiliser starts at 2 but not 1 because every
-     * number is divisable by 1.
+	 * This code defines if an number is prime or not
+	 * This code also prints an number triangle
 	 */
    public boolean isPrime() {
 	   
 	   
 	   for(int i = 2; i<= number-1; i++) {
-	      if (number % 2 == 0) {
+	      if (number % i == 0) {
 	    	  return false;
 	         
 	      }
@@ -30,6 +27,23 @@ public class MyNumber {
  
      return true;
    }
-}  
+    public void printNumberTriangle() {
+	//1
+	//1 2
+	//1 2 3
+	//1 2 3 4
+	//1 2 3 4 5
+    for(int i=1;i<=number;  i++) {
+        for(int j =1; j<=i; j++) {
+    	System.out.print(j + " ");
+        }
+        System.out.println();
+    
+    }
+
+    } 
+} 
+
+ 
    
    
